@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="De Eva's Wedding Planning & Styling - Jullie droombruiloft, perfect georganiseerd door Eva & Eva in Nederland.">
+    <meta name="keywords" content="wedding planning, bruiloft, styling, weddingplanner, trouwen, Nederland">
+    <meta name="theme-color" content="#f8c9c4">
+    <meta property="og:title" content="De Eva's | Wedding Planning & Styling">
+    <meta property="og:description" content="Jullie droombruiloft, perfect georganiseerd door Eva & Eva in Nederland.">
+    <meta property="og:image" content="photos/cute couple getting married 2.jpg">
+    <meta property="og:url" content="https://www.de-evas.nl">
+    <meta property="og:type" content="website">
+    <title>De Eva's | Wedding Planning & Styling</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
+    <style>
+        /* Base Styles & Variables */
+        :root {
+            --color-primary: #e8b4b8; /* Modernized blush pink */
+            --color-secondary: #c8d5b9; /* Refreshed soft green */
+            --color-accent: #d4b483; /* Warmer gold */
+            --color-dark: #4a4a4a; /* Softer black for text */
+            --color-white: #ffffff;
+            --color-cream: #faf7f2; /* Warmer cream */
+            --color-light-gray: #f5f5f5; /* For subtle backgrounds */
+            --color-text: #2d2d2d; /* Slightly softer than black */
+            --color-text-light: #6e6e6e; /* Medium gray for secondary text */
+            --font-heading: 'Cormorant Garamond', serif; /* More elegant serif */
+            --font-body: 'Nunito Sans', sans-serif; /* More modern sans-serif */
+            --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.03);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 16px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-xxl: 48px;
+        }
+
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            line-height: 1.6;
+            background-color: var(--color-white);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-heading);
+            line-height: 1.2;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-between {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            font-size: 0.85rem;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: all 0.6s ease;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:active {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+            background-image: linear-gradient(135deg, var(--color-primary), #f0a0a8);
+        }
+
+        .btn-primary:hover {
+            background-image: linear-gradient(135deg, #f0a0a8, var(--color-primary));
+        }
+
+        .btn-secondary {
+            background-color: var(--color-secondary);
+            color: var(--color-text);
+            background-image: linear-gradient(135deg, var(--color-secondary), #b8c5a9);
+        }
+
+        .btn-secondary:hover {
+            background-image: linear-gradient(135deg, #b8c5a9, var(--color-secondary));
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--color-white);
+            color: var(--color-white);
+            box-shadow: none;
+            padding: 12px 30px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-white);
+            color: var(--color-text);
+            border-color: var(--color-white);
+        }
+
+        .btn-text {
+            background: none;
+            border: none;
+            color: var(--color-primary);
+            padding: 0;
+            font-weight: 600;
+            position: relative;
+            box-shadow: none;
+        }
+
+        .btn-text::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-primary);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-text:hover {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        .btn-text:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .header.scrolled {
+            padding: 10px 0;
+            box-shadow: var(--shadow-md);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            color: var(--color-text);
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: translateY(-2px);
+        }
+
+        .logo span {
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            padding: 8px 0;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: width 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary);
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--color-text);
+            transition: var(--transition);
+        }
+
+        .nav-toggle:hover {
+            color: var(--color-primary);
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            width: 100%;
+            padding-top: 80px;
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('photos/an altar in the woods.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll; /* Better performance */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            will-change: transform; /* GPU acceleration */
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 var(--spacing-xl);
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-xl);
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-xxl);
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+            animation-fill-mode: both;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            animation: fadeInUp 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0.6s;
+            animation-fill-mode: both;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--color-cream);
+        }
+
+        .about-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .about h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: var(--color-primary);
+        }
+
+        .about p {
+            margin-bottom: 20px;
+            color: var(--color-text-light);
+        }
+
+        /* Services Section */
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .services-grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (hover: hover) {
+            .service-card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .service-card:hover .service-image {
+                transform: scale(1.05);
+            }
+        }
+
+        .service-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+            position: relative;
+        }
+
+        .service-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+            z-index: 1;
+        }
+
+        .service-content {
+            padding: var(--spacing-lg) var(--spacing-lg);
+            position: relative;
+        }
+
+        .service-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text);
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .service-content h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-primary);
+        }
+
+        .service-content p {
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.6;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--color-cream);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials::before {
+            content: '\201C'; /* Opening quote mark */
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 200px;
+            font-family: Georgia, serif;
+            color: rgba(0, 0, 0, 0.05);
+            line-height: 1;
+        }
+
+        .testimonials::after {
+            content: '\201D'; /* Closing quote mark */
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            font-size: 200px;
+            font-family: Georgia, serif;
+            color: rgba(0, 0, 0, 0.05);
+            line-height: 1;
+        }
+
+        .testimonials h2 {
+            font-size: 2.8rem;
+            margin-bottom: var(--spacing-xxl);
+            position: relative;
+            display: inline-block;
+            padding-bottom: var(--spacing-md);
+        }
+
+        .testimonials h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-primary);
+        }
+
+        .testimonials-slider {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial-slide {
+            background-color: var(--color-white);
+            padding: var(--spacing-xxl);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            display: none;
+            position: relative;
+        }
+
+        .testimonial-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: var(--color-primary);
+            border-top-left-radius: var(--border-radius-lg);
+            border-bottom-left-radius: var(--border-radius-lg);
+        }
+
+        .testimonial-slide.active {
+            display: block;
+            animation: fadeIn 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-light);
+            position: relative;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .testimonial-author::before {
+            content: '—';
+            margin-right: 10px;
+            color: var(--color-primary);
+        }
+
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+
+        .testimonial-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 2px solid transparent;
+        }
+
+        .testimonial-dot:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial-dot.active {
+            background-color: var(--color-primary);
+            transform: scale(1.2);
+            border-color: white;
+        }
+
+        /* Call to Action */
+        .cta {
+            background-color: var(--color-primary);
+            text-align: center;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            color: white;
+            background-image: linear-gradient(135deg, var(--color-primary), #f0a0a8);
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 20% 150%, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .cta .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta h2 {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-lg);
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto var(--spacing-xl);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .cta .btn {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            color: var(--color-text);
+            font-weight: 700;
+            padding: 16px 36px;
+        }
+
+        .cta .btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--color-dark);
+            color: white;
+            padding: 80px 0 30px;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+        }
+
+        .footer-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .footer-title {
+            font-size: 1.4rem;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+            font-family: var(--font-heading);
+            font-weight: 600;
+        }
+
+        .footer-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--color-primary);
+        }
+
+        .footer-col p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-link {
+            margin-bottom: var(--spacing-sm);
+            display: block;
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            padding: var(--spacing-xs) 0;
+        }
+
+        .footer-link:hover {
+            color: var(--color-primary);
+            transform: translateX(5px);
+        }
+
+        .footer-social-icons {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .footer-social-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .footer-social-icon:hover {
+            background-color: var(--color-primary);
+            transform: translateY(-5px);
+        }
+
+        .footer-social-icon i {
+            font-size: 18px;
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .copyright a {
+            color: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        .copyright a:hover {
+            color: white;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 30px;
+            padding: 3px;
+            margin-left: var(--spacing-md);
+        }
+
+        .language-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--color-text);
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 30px;
+            transition: var(--transition);
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .language-btn.active {
+            background-color: var(--color-primary);
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .language-btn:not(.active):hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        /* Portfolio Gallery */
+        .portfolio {
+            background-color: var(--color-light-gray);
+        }
+
+        .portfolio h2 {
+            font-size: 2.8rem;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            display: inline-block;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .portfolio h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-primary);
+        }
+
+        .portfolio-grid {
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .portfolio-item {
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            position: relative;
+            height: 350px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        @media (hover: hover) {
+            .portfolio-item:hover {
+                transform: translateY(-10px);
+                box-shadow: var(--shadow-lg);
+            }
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.1) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            padding: var(--spacing-xl);
+            text-align: center;
+            color: white;
+        }
+
+        @media (hover: hover) {
+            .portfolio-item:hover .portfolio-overlay {
+                opacity: 1;
+            }
+
+            .portfolio-item:hover .portfolio-image {
+                transform: scale(1.1);
+            }
+        }
+
+        .portfolio-overlay h3 {
+            font-size: 1.8rem;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(20px);
+            transition: transform 0.5s ease 0.1s;
+        }
+
+        .portfolio-overlay p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--spacing-lg);
+            transform: translateY(20px);
+            transition: transform 0.5s ease 0.2s;
+            font-weight: 300;
+        }
+
+        .portfolio-overlay .btn {
+            transform: translateY(20px);
+            transition: transform 0.5s ease 0.3s;
+        }
+
+        @media (hover: hover) {
+            .portfolio-item:hover .portfolio-overlay h3,
+            .portfolio-item:hover .portfolio-overlay p,
+            .portfolio-item:hover .portfolio-overlay .btn {
+                transform: translateY(0);
+            }
+        }
+
+        /* Personalized Approach */
+        .approach {
+            background-color: var(--color-cream);
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .approach-card {
+            background-color: var(--color-white);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+
+        .approach-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .approach-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .approach-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--color-text);
+        }
+
+        .approach-card p {
+            color: var(--color-text-light);
+            margin-bottom: 0;
+        }
+
+        /* Timeline Section */
+        .timeline {
+            background-color: var(--color-white);
+        }
+
+        .timeline-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50px;
+            width: 4px;
+            background-color: var(--color-primary);
+            border-radius: 2px;
+            transform: translateZ(0); /* Force GPU acceleration */
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 130px;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 0;
+            min-width: 100px;
+            width: auto;
+            padding: 0 15px;
+            height: 40px;
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+            z-index: 1;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .timeline-content {
+            background-color: var(--color-cream);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        @media (hover: hover) {
+            .timeline-content:hover {
+                transform: translateY(-3px);
+                box-shadow: var(--shadow-md);
+            }
+        }
+
+        .timeline-content h3 {
+            margin-bottom: 15px;
+            color: var(--color-text);
+        }
+
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-right: 10px;
+            color: var(--color-primary);
+        }
+
+        .timeline-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Contact Form */
+        .contact {
+            background-color: var(--color-light-gray);
+            position: relative;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="rgba(0,0,0,0.02)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .contact .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact h2 {
+            font-size: 2.8rem;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            display: inline-block;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .contact h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-primary);
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr 2fr;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+
+        .contact-info {
+            background-color: var(--color-primary);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-md);
+            color: white;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            z-index: 0;
+        }
+
+        .contact-method {
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-method h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-method h3 i {
+            margin-right: var(--spacing-sm);
+            font-size: 1.2rem;
+        }
+
+        .contact-method p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            padding: var(--spacing-xl);
+            background-color: white;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form:focus-within {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px var(--spacing-md);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius-sm);
+            font-family: var(--font-body);
+            transition: var(--transition);
+            background-color: var(--color-light-gray);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.2);
+            background-color: white;
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-checkbox {
+            margin-right: var(--spacing-sm);
+        }
+
+        .checkbox-label {
+            display: inline;
+            font-weight: normal;
+        }
+
+        .contact-social {
+            margin-top: var(--spacing-xl);
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-social-icons {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-sm);
+        }
+
+        .contact-social-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transition: var(--transition);
+            color: white;
+        }
+
+        .contact-social-icon:hover {
+            background-color: white;
+            color: var(--color-primary);
+            transform: translateY(-5px);
+        }
+
+        /* FAQ Accordions */
+        .faq {
+            background-color: var(--color-cream);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .faq::before {
+            content: '?';
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            font-size: 300px;
+            font-family: var(--font-heading);
+            color: rgba(0, 0, 0, 0.03);
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .faq h2 {
+            font-size: 2.8rem;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            display: inline-block;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .faq h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-primary);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: var(--spacing-xxl) auto 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .faq-item {
+            margin-bottom: var(--spacing-md);
+            border: none;
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            background-color: white;
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            padding: var(--spacing-lg) var(--spacing-xl);
+            background-color: white;
+            cursor: pointer;
+            position: relative;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 1.1rem;
+            color: var(--color-text);
+            border-left: 4px solid transparent;
+        }
+
+        .faq-question:hover {
+            background-color: var(--color-light-gray);
+        }
+
+        .faq-question.active {
+            background-color: white;
+            border-left-color: var(--color-primary);
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: var(--spacing-xl);
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+
+        .faq-question.active::after {
+            content: "-";
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
+            padding: 0 var(--spacing-xl);
+            will-change: max-height, padding;
+            background-color: white;
+            color: var(--color-text-light);
+            line-height: 1.6;
+            border-left: 4px solid transparent;
+        }
+
+        .faq-answer.active {
+            max-height: 500px; /* Increased for better content display */
+            padding: var(--spacing-lg) var(--spacing-xl);
+            transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+            border-left-color: var(--color-primary);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 992px) {
+            .about-grid, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+
+            .about-image {
+                order: -1; /* Move image above text on mobile */
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .testimonials::before, .testimonials::after, .faq::before {
+                display: none; /* Hide decorative elements on smaller screens */
+            }
+
+            .section {
+                padding: 70px 0;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--color-white);
+                box-shadow: var(--shadow-md);
+                flex-direction: column;
+                padding: var(--spacing-lg) 0;
+                text-align: center;
+                z-index: 1000;
+                border-bottom-left-radius: var(--border-radius-md);
+                border-bottom-right-radius: var(--border-radius-md);
+            }
+
+            .nav-list.show {
+                display: flex;
+                animation: fadeInDown 0.3s ease-out;
+            }
+
+            @keyframes fadeInDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-item {
+                margin: var(--spacing-sm) 0;
+            }
+
+            .language-switcher {
+                margin: var(--spacing-md) auto 0;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: var(--spacing-md);
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .portfolio-item {
+                height: 300px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: var(--spacing-xl);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section {
+                padding: 50px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: var(--spacing-lg);
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: var(--spacing-xl);
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .testimonial-slide {
+                padding: var(--spacing-lg);
+            }
+
+            .testimonial-text {
+                font-size: 1.1rem;
+            }
+
+            .contact-form, .contact-info {
+                padding: var(--spacing-lg);
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta {
+                padding: 80px 0;
+            }
+
+            .cta h2 {
+                font-size: 2.2rem;
+            }
+
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Preload hero image for better performance -->
+    <link rel="preload" as="image" href="photos/an altar in the woods.jpg">
+
+    <!-- WhatsApp Floating Button -->
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .whatsapp-button i {
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Accessibility: Skip to content link -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container flex flex-between">
+            <a href="#" class="logo">De <span>Eva's</span></a>
+
+            <nav>
+                <ul id="navList" class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Over Ons</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Diensten</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+                    <li class="nav-item">
+                        <div class="language-switcher">
+                            <button class="language-btn active">NL</button>
+                            <button class="language-btn">EN</button>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="main-content" class="hero">
+        <div class="hero-content">
+            <h1>Jullie unieke bruiloft, op maat georganiseerd</h1>
+            <p>Wij zijn Eva & Eva, weddingplanners met passie voor het creëren van persoonlijke, onvergetelijke momenten. Geen standaardpakketten, maar een aanpak die volledig is afgestemd op jullie wensen en budget.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Plan een vrijblijvend gesprek</a>
+                <a href="#approach" class="btn btn-outline">Ontdek onze aanpak</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid grid">
+                <div class="about-image">
+                    <img src="photos/cute couple getting married 2.jpg" alt="Eva & Eva, Wedding Planners" loading="eager" width="600" height="400">
+                </div>
+                <div class="about-content">
+                    <h2>Over De Eva's</h2>
+                    <p>Het verhaal van De Eva's begon toen twee naamgenoten, Eva Jansen en Eva de Vries, elkaar ontmoetten tijdens een bruiloft. De ene als ceremoniemeester, de andere als stylist. Ze ontdekten hun gedeelde passie voor het creëren van perfecte bruiloften en besloten hun krachten te bundelen.</p>
+
+                    <p>Met hun complementaire vaardigheden - Eva J. met haar organisatorische talent en Eva V. met haar creatieve expertise - vormen ze een perfect team dat elk aspect van jullie bruiloft met zorg kan begeleiden.</p>
+
+                    <p>We begrijpen dat iedere liefde uniek is, en dat moet jullie bruiloft ook zijn. Of jullie dromen van een intieme ceremonie of een groots feest, klassiek of modern, we luisteren naar jullie wensen en maken ze werkelijkheid - zonder stress, met veel plezier.</p>
+
+                    <a href="#contact" class="btn btn-primary">Maak kennis met ons</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Onze Diensten</h2>
+            <div class="services-grid grid">
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('photos/3 young married couples wide shot.jpg')" role="img" aria-label="Drie bruidsparen op een rij"></div>
+                    <div class="service-content">
+                        <h3>Complete Weddingplanning</h3>
+                        <p>Van het eerste idee tot de laatste dans. Wij zorgen voor de totale planning en coördinatie van jullie bruiloft, zodat jullie zorgeloos kunnen genieten.</p>
+                        <a href="#contact" class="btn btn-outline">Meer informatie</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('photos/cute couple getting married.jpg')" role="img" aria-label="Bruidspaar tijdens ceremonie"></div>
+                    <div class="service-content">
+                        <h3>Dag-coördinatie</h3>
+                        <p>Als jullie zelf de voorbereidingen hebben getroffen, nemen wij de regie op de dag zelf over, zodat alles vlekkeloos verloopt.</p>
+                        <a href="#contact" class="btn btn-outline">Meer informatie</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('photos/an altar with beautiful flowers.jpg')" role="img" aria-label="Altaar met prachtige bloemen"></div>
+                    <div class="service-content">
+                        <h3>Styling & Decoratie</h3>
+                        <p>We creëren een visueel samenhangend concept dat perfect aansluit bij jullie wensen en persoonlijkheid, van de bloemen tot de tafelaankleding.</p>
+                        <a href="#contact" class="btn btn-outline">Meer informatie</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('photos/an altar in the woods.jpg')" role="img" aria-label="Altaar in het bos"></div>
+                    <div class="service-content">
+                        <h3>Locatie Selectie</h3>
+                        <p>Met onze kennis van bijzondere locaties in Nederland helpen we jullie de perfecte plek te vinden die past bij jullie visie en budget.</p>
+                        <a href="#contact" class="btn btn-outline">Meer informatie</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('photos/wedding catering table.jpg')" role="img" aria-label="Bruiloft catering tafel"></div>
+                    <div class="service-content">
+                        <h3>Catering & Dranken</h3>
+                        <p>Van culinaire hoogstandjes tot informele buffetten, wij zorgen voor gastronomisch genot dat perfect aansluit bij de stijl van jullie bruiloft.</p>
+                        <a href="#contact" class="btn btn-outline">Meer informatie</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('photos/wedding catering with beautiful flowers on the table.jpg')" role="img" aria-label="Bruiloft catering met bloemen op tafel"></div>
+                    <div class="service-content">
+                        <h3>Bloemen & Boeketten</h3>
+                        <p>We werken samen met getalenteerde bloemarrangeurs om prachtige bloemstukken te creëren die de sfeer van jullie dag versterken.</p>
+                        <a href="#contact" class="btn btn-outline">Meer informatie</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#contact" class="btn btn-primary">Bekijk al onze diensten</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2 class="text-center">Ons Portfolio</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">Ontdek een selectie van de bruiloften die we hebben mogen organiseren. Elk een afspiegeling van unieke liefdesverhalen en persoonlijkheden.</p>
+
+            <div class="portfolio-grid grid">
+                <div class="portfolio-item" data-category="classic">
+                    <img src="photos/cute couple getting married 3.jpg" alt="Klassieke bruiloft" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <div class="portfolio-overlay">
+                        <h3>Julia & Thomas</h3>
+                        <p>Een elegante, klassieke bruiloft in een historisch landhuis</p>
+                        <a href="#contact" class="btn btn-outline">Bekijk deze bruiloft</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="bohemian">
+                    <img src="photos/cute couple getting married 4.jpg" alt="Bohemian bruiloft" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <div class="portfolio-overlay">
+                        <h3>Sarah & Lena</h3>
+                        <p>Een bohemian festival-bruiloft in een bloeiende boomgaard</p>
+                        <a href="#contact" class="btn btn-outline">Bekijk deze bruiloft</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="modern">
+                    <img src="photos/cute couple getting married 5.jpg" alt="Moderne bruiloft" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <div class="portfolio-overlay">
+                        <h3>Daan & Fabian</h3>
+                        <p>Een stijlvolle, moderne bruiloft in een gerenoveerde fabrieksruimte</p>
+                        <a href="#contact" class="btn btn-outline">Bekijk deze bruiloft</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="rustic">
+                    <img src="photos/cute couple getting married 6.jpg" alt="Landelijke bruiloft" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <div class="portfolio-overlay">
+                        <h3>Emma & Niels</h3>
+                        <p>Een warme, landelijke bruiloft op een authentieke boerderij</p>
+                        <a href="#contact" class="btn btn-outline">Bekijk deze bruiloft</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="classic">
+                    <img src="photos/cute couple getting married 7.jpg" alt="Klassieke bruiloft" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <div class="portfolio-overlay">
+                        <h3>Sophie & Mark</h3>
+                        <p>Een romantische bruiloft in een kasteel met traditionele elementen</p>
+                        <a href="#contact" class="btn btn-outline">Bekijk deze bruiloft</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="modern">
+                    <img src="photos/woman whos getting married holding flowers.jpg" alt="Moderne bruiloft" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <div class="portfolio-overlay">
+                        <h3>Lisa & Rob</h3>
+                        <p>Een minimalistische ceremonie met industriële details</p>
+                        <a href="#contact" class="btn btn-outline">Bekijk deze bruiloft</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2>Wat bruidsparen over ons zeggen</h2>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <p class="testimonial-text">"De Eva's hebben onze bruiloft omgetoverd tot een magisch feest dat onze wildste verwachtingen overtrof. Ze begrepen precies wat we wilden en hebben een volledig op maat gemaakt plan opgesteld dat perfect bij ons paste. Hun persoonlijke aanpak, geduld en expertise maakten het hele proces zo plezierig!"</p>
+                    <div class="testimonial-author">Marloes & Jeroen, getrouwd in juni 2024</div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"Wat ons het meest aansprak was dat De Eva's geen standaardpakketten aanboden, maar echt luisterden naar onze wensen en budget. Ze stelden een plan op dat precies aansloot bij wat wij nodig hadden. Niets was te veel gevraagd, van last-minute wijzigingen tot het omgaan met familiedynamiek. Op de dag zelf konden we volledig ontspannen."</p>
+                    <div class="testimonial-author">Amir & David, getrouwd in september 2024</div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"Wat De Eva's onderscheidt is hun persoonlijke benadering. Ze namen de tijd om ons echt te leren kennen en creëerden een bruiloft die onze persoonlijkheid perfect weerspiegelde. Hun transparante prijsopgave zonder verrassingen achteraf was zo verfrissend. Hun netwerk van leveranciers is indrukwekkend en ze wisten precies welke partners bij onze stijl pasten."</p>
+                    <div class="testimonial-author">Kim & Bas, getrouwd in augustus 2023</div>
+                </div>
+
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalized Approach Section -->
+    <section id="approach" class="section approach">
+        <div class="container">
+            <h2 class="text-center">Onze Persoonlijke Aanpak</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">Wij geloven dat elke bruiloft uniek is, net als jullie liefdesverhaal. Daarom bieden wij volledig op maat gemaakte diensten aan, afgestemd op jullie wensen, stijl en budget.</p>
+
+            <div class="approach-grid grid">
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Persoonlijk Gesprek</h3>
+                    <p>We beginnen altijd met een vrijblijvend gesprek om jullie wensen, dromen en budget te bespreken. Zo krijgen we een goed beeld van wat jullie voor ogen hebben.</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Op Maat Gemaakt Voorstel</h3>
+                    <p>Op basis van jullie wensen stellen we een voorstel op met diensten die perfect bij jullie passen. Geen standaardpakketten, maar een oplossing die aansluit bij jullie behoeften.</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Flexibele Ondersteuning</h3>
+                    <p>Of jullie nu alleen hulp nodig hebben bij de styling, volledige planning of iets daar tussenin - wij passen onze diensten aan op wat jullie nodig hebben.</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Transparante Prijzen</h3>
+                    <p>We geloven in eerlijke en transparante prijzen, gebaseerd op jullie specifieke wensen. Geen verrassingen achteraf, maar duidelijkheid vanaf het begin.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="#contact" class="btn btn-primary">Plan een vrijblijvend gesprek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Planning Timeline -->
+    <section id="timeline" class="section timeline">
+        <div class="container">
+            <h2 class="text-center">Jullie Bruiloft Timeline</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">Een bruiloft plannen kan overweldigend zijn. Hieronder vinden jullie een globale timeline om inzicht te krijgen in het planningsproces. Wij begeleiden jullie uiteraard door elke stap!</p>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-marker">12+ maanden</div>
+                    <div class="timeline-content">
+                        <h3>Begin van de planning</h3>
+                        <ul class="timeline-list">
+                            <li>Bepaal jullie budget</li>
+                            <li>Stel een gastenlijst op</li>
+                            <li>Kies een datum (of meerdere opties)</li>
+                            <li>Begin met locatiebezoeken</li>
+                            <li>Schakel De Eva's in voor ondersteuning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">9-12 maanden</div>
+                    <div class="timeline-content">
+                        <h3>Belangrijke leveranciers</h3>
+                        <ul class="timeline-list">
+                            <li>Boek jullie droomlocatie</li>
+                            <li>Selecteer een fotograaf en videograaf</li>
+                            <li>Begin met het zoeken naar jullie perfecte outfit</li>
+                            <li>Kies een cateraar als deze niet bij de locatie inbegrepen is</li>
+                            <li>Verstuur save-the-dates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">6-9 maanden</div>
+                    <div class="timeline-content">
+                        <h3>Creatieve elementen</h3>
+                        <ul class="timeline-list">
+                            <li>Kies jullie bloemen en decoratie</li>
+                            <li>Boek entertainment (DJ, band, etc.)</li>
+                            <li>Plan proeverijen met de cateraar</li>
+                            <li>Ontwerp uitnodigingen</li>
+                            <li>Regel transport voor de dag zelf</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">3-6 maanden</div>
+                    <div class="timeline-content">
+                        <h3>Details uitwerken</h3>
+                        <ul class="timeline-list">
+                            <li>Verstuur uitnodigingen</li>
+                            <li>Plan een proefkapsel en make-up</li>
+                            <li>Kies ringen en accessoires</li>
+                            <li>Maak een draaiboek voor de dag</li>
+                            <li>Regel cadeaus voor ouders/getuigen</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">1-3 maanden</div>
+                    <div class="timeline-content">
+                        <h3>Laatste voorbereidingen</h3>
+                        <ul class="timeline-list">
+                            <li>Verwerk RSVP's en maak een definitieve gastenlijst</li>
+                            <li>Maak een tafelindeling</li>
+                            <li>Laatste pasafspraken voor jullie outfit</li>
+                            <li>Bevestig alle afspraken met leveranciers</li>
+                            <li>Plan een laatste locatiebezoek</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">De laatste week</div>
+                    <div class="timeline-content">
+                        <h3>Aftellen!</h3>
+                        <ul class="timeline-list">
+                            <li>Pak jullie koffers voor de huwelijksnacht/huwelijksreis</li>
+                            <li>Geef het definitieve aantal gasten door aan de cateraar</li>
+                            <li>Haal jullie outfit op</li>
+                            <li>Neem een moment voor jezelf om te ontspannen</li>
+                            <li>Geniet van jullie grote dag!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="#contact" class="btn btn-primary">Hulp nodig bij jullie planning?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section cta">
+        <div class="container">
+            <h2>Klaar om jullie droombruiloft te plannen?</h2>
+            <p>Laat ons jullie helpen om jullie perfecte dag te creëren, precies zoals jullie het zich voorstellen.</p>
+            <a href="#contact" class="btn btn-primary">Plan een vrijblijvend gesprek</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <h2 class="text-center">Veelgestelde Vragen</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">Hebben jullie vragen over onze diensten of werkwijze? Hieronder vinden jullie antwoorden op de meest gestelde vragen. Staat jullie vraag er niet tussen? Neem dan gerust contact met ons op.</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Hoe ver van tevoren moeten we jullie inschakelen?</div>
+                    <div class="faq-answer">
+                        <p>Idealiter beginnen we 9-12 maanden voor de bruiloft, maar we hebben ook ervaring met het organiseren van prachtige bruiloften in kortere tijd. Hoe eerder jullie contact opnemen, hoe meer keuze in locaties en leveranciers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Hoe werkt jullie prijsopbouw?</div>
+                    <div class="faq-answer">
+                        <p>Wij geloven niet in standaardpakketten omdat elke bruiloft uniek is. Na een vrijblijvend gesprek stellen we een voorstel op maat op, gebaseerd op jullie wensen en de omvang van jullie bruiloft. We zijn volledig transparant over onze tarieven en jullie ontvangen een gedetailleerde offerte zonder verborgen kosten.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">In welke regio's zijn jullie actief?</div>
+                    <div class="faq-answer">
+                        <p>Wij zijn gevestigd in Amsterdam, maar werken door heel Nederland. Voor bruiloften in het buitenland rekenen we extra reiskosten, maar hebben we ruime ervaring met bestemmingsbruiloften in Europa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Kunnen jullie ook alleen op de dag zelf aanwezig zijn?</div>
+                    <div class="faq-answer">
+                        <p>Zeker! Naast volledige planning bieden we ook dag-coördinatie aan. Jullie regelen zelf alle voorbereidingen, en wij zorgen ervoor dat alles op de dag zelf vlekkeloos verloopt, zodat jullie zorgeloos kunnen genieten.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Werken jullie samen met vaste leveranciers?</div>
+                    <div class="faq-answer">
+                        <p>We hebben een uitgebreid netwerk van betrouwbare leveranciers in verschillende prijsklassen, maar staan altijd open voor jullie voorkeuren. We selecteren leveranciers die passen bij jullie stijl, wensen en budget, zonder dat we commissies ontvangen die de prijs verhogen.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wat als we al een locatie hebben geboekt?</div>
+                    <div class="faq-answer">
+                        <p>Geen probleem! We kunnen op elk moment in het planningsproces instappen. Of jullie nu alleen hulp nodig hebben bij styling, leveranciersselectie of dag-coördinatie, we passen onze diensten aan op wat jullie nog nodig hebben.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="text-center">Neem Contact Op</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">Klaar om jullie unieke bruiloft te bespreken? Neem contact met ons op voor een vrijblijvend gesprek waarin we jullie wensen, dromen en budget kunnen verkennen. Geen verplichtingen, alleen inspiratie en mogelijkheden.</p>
+
+            <div class="contact-grid grid">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <h3><i class="fas fa-envelope"></i> E-mail</h3>
+                        <p>info@de-evas.nl</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3><i class="fas fa-phone"></i> Telefoon</h3>
+                        <p>+31 (0)6 12 34 56 78</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3><i class="fas fa-map-marker-alt"></i> Kantoor</h3>
+                        <p>Bruidstraat 45<br>1234 AB Amsterdam</p>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3><i class="fas fa-hashtag"></i> Social Media</h3>
+                        <div class="contact-social-icons">
+                            <a href="#" class="contact-social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="contact-social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="contact-social-icon" aria-label="Pinterest">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                            <a href="#" class="contact-social-icon" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Naam</label>
+                            <input type="text" id="name" name="name" class="form-control" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefoonnummer</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" aria-required="false">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date" class="form-label">Geplande Trouwdatum (indien bekend)</label>
+                            <input type="date" id="date" name="wedding_date" class="form-control" aria-required="false">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Bericht</label>
+                            <textarea id="message" name="message" class="form-control" required aria-required="true" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="privacy" name="privacy_agreement" class="form-checkbox" required aria-required="true">
+                            <label for="privacy" class="form-label checkbox-label">Ik ga akkoord met de <a href="#privacy-policy" style="text-decoration: underline;">privacyverklaring</a></label>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" aria-label="Verstuur contactformulier">Verstuur Bericht</button>
+                        <div id="form-status" class="form-status" aria-live="polite" style="margin-top: 15px; display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/31612345678" class="whatsapp-button" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid grid">
+            <div class="footer-col">
+                <h3 class="footer-title">De Eva's</h3>
+                <p>Wij maken van jullie bruiloft een onvergetelijke dag, precies zoals jullie het dromen.</p>
+
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon" aria-label="Pinterest">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Diensten</h3>
+                <ul class="footer-links">
+                    <li><a href="#services" class="footer-link">Complete Weddingplanning</a></li>
+                    <li><a href="#services" class="footer-link">Dag-coördinatie</a></li>
+                    <li><a href="#services" class="footer-link">Styling & Decoratie</a></li>
+                    <li><a href="#services" class="footer-link">Locatie Selectie</a></li>
+                    <li><a href="#services" class="footer-link">Catering & Dranken</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Snelle Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about" class="footer-link">Over Ons</a></li>
+                    <li><a href="#services" class="footer-link">Diensten</a></li>
+                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                    <li><a href="#approach" class="footer-link">Onze Aanpak</a></li>
+                    <li><a href="#timeline" class="footer-link">Bruiloft Timeline</a></li>
+                    <li><a href="#faq" class="footer-link">Veelgestelde Vragen</a></li>
+
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-links">
+                    <li class="footer-link">Bruidstraat 45, 1234 AB Amsterdam</li>
+                    <li class="footer-link">info@de-evas.nl</li>
+                    <li class="footer-link">+31 (0)6 12 34 56 78</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 De Eva's Wedding Planning & Styling. Alle rechten voorbehouden.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- JavaScript -->
+    <script defer>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navList = document.getElementById('navList');
+
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    navList.classList.remove('show');
+                }
+            });
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Testimonial Slider
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                // Remove active class from all dots and slides
+                testimonialDots.forEach(d => d.classList.remove('active'));
+                testimonialSlides.forEach(slide => slide.classList.remove('active'));
+
+                // Add active class to current dot and slide
+                dot.classList.add('active');
+                testimonialSlides[index].classList.add('active');
+            });
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = 'Verzenden...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission with a timeout
+            setTimeout(() => {
+                // In a real implementation, you would send the form data to a server
+                formStatus.style.display = 'block';
+                formStatus.textContent = 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.';
+                formStatus.style.color = 'green';
+                contactForm.reset();
+
+                // Reset button
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 5000);
+            }, 1500);
+        });
+
+        // Language Switcher
+        const languageButtons = document.querySelectorAll('.language-btn');
+
+        languageButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all language buttons
+                languageButtons.forEach(b => b.classList.remove('active'));
+
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                // In a real implementation, you would switch the language here
+                // For now, just show an alert
+                if (button.textContent === 'EN') {
+                    alert('De Engelse versie is momenteel in ontwikkeling.');
+                }
+            });
+        });
+    // Add lazy loading to images and performance optimizations
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize FAQ accordions with performance optimizations
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        const faqContainer = document.querySelector('.faq-container');
+
+        // Use event delegation instead of multiple event listeners
+        if (faqContainer) {
+            faqContainer.addEventListener('click', (e) => {
+                const question = e.target.closest('.faq-question');
+                if (!question) return;
+
+                // Use requestAnimationFrame for smoother UI updates
+                requestAnimationFrame(() => {
+                    const answer = question.nextElementSibling;
+                    const isActive = question.classList.contains('active');
+
+                    // Close all other FAQs - limit DOM operations
+                    const activeQuestions = faqContainer.querySelectorAll('.faq-question.active');
+                    activeQuestions.forEach(activeQuestion => {
+                        if (activeQuestion !== question) {
+                            activeQuestion.classList.remove('active');
+                            activeQuestion.nextElementSibling.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle current FAQ
+                    question.classList.toggle('active');
+                    answer.classList.toggle('active');
+                });
+            });
+        }
+        // Add lazy loading to images that don't already have it
+        const images = document.querySelectorAll('img:not([loading])');
+        images.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+        });
+
+        // Add intersection observer for animation on scroll - with performance optimizations
+        const observer = new IntersectionObserver((entries) => {
+            // Process all entries in a single frame
+            requestAnimationFrame(() => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+        }, {
+            threshold: 0.1,
+            // Add rootMargin to start loading earlier
+            rootMargin: '100px'
+        });
+
+        // Batch observations and limit number of animated elements
+        // Only animate important elements and reduce total count
+        const elementsToAnimate = [
+            ...Array.from(document.querySelectorAll('.service-card')).slice(0, 3),
+            document.querySelector('.about-content'),
+            ...Array.from(document.querySelectorAll('.portfolio-item')).slice(0, 3),
+            ...Array.from(document.querySelectorAll('.approach-card')).slice(0, 4),
+            ...Array.from(document.querySelectorAll('.timeline-item')).slice(0, 3),
+            ...Array.from(document.querySelectorAll('.faq-item')).slice(0, 3)
+        ].filter(Boolean); // Remove any null elements
+
+        // Stagger observations to prevent too many at once
+        let delay = 0;
+        elementsToAnimate.forEach(el => {
+            el.classList.add('animate-on-scroll');
+            setTimeout(() => {
+                observer.observe(el);
+            }, delay);
+            delay += 50; // Stagger by 50ms
+        });
+
+        // Optimize smooth scrolling - only apply to anchor links instead of the whole page
+        document.documentElement.style.scrollBehavior = 'auto'; // Remove global smooth scrolling
+
+        // Add optimized smooth scrolling only to anchor links
+        document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // Use requestAnimationFrame for smoother performance
+                    requestAnimationFrame(() => {
+                        const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            });
+        });
+
+        // Add automatic testimonial rotation
+        let currentTestimonial = 0;
+        const autoRotateTestimonials = () => {
+            currentTestimonial = (currentTestimonial + 1) % testimonialSlides.length;
+            testimonialDots[currentTestimonial].click();
+        };
+
+        // Start auto rotation and pause on hover
+        const testimonialContainer = document.querySelector('.testimonials-slider');
+        let testimonialInterval = setInterval(autoRotateTestimonials, 5000);
+
+        testimonialContainer.addEventListener('mouseenter', () => {
+            clearInterval(testimonialInterval);
+        });
+
+        testimonialContainer.addEventListener('mouseleave', () => {
+            testimonialInterval = setInterval(autoRotateTestimonials, 5000);
+        });
+    });
+    </script>
+
+    <!-- Add CSS for scroll animations, accessibility and performance optimizations -->
+    <style>
+        /* Performance optimizations to reduce repaints */
+        body * {
+            backface-visibility: hidden; /* Reduces paints */
+        }
+
+        /* Optimize rendering performance */
+        .header, .hero, .section, .footer {
+            transform: translateZ(0); /* Force GPU acceleration */
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Accessibility Features */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-primary);
+            color: white;
+            padding: 8px 15px;
+            z-index: 9999;
+            transition: top 0.3s ease;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* High contrast mode support */
+        @media (forced-colors: active) {
+            .btn, .nav-link, .footer-link {
+                forced-color-adjust: none;
+            }
+        }
+
+        /* Reduced motion preference */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .animate-on-scroll {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+    </style>
